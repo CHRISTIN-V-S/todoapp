@@ -13,7 +13,7 @@ export default function ViewTask(){
 
     async function getTask(){
         try {
-            const response=await axios.get(`https://https://todoapp-v7pm.vercel.app/api/todoapp/view/${id}`)
+            const response=await axios.get(`https://todoapp-v7pm.vercel.app//api/todoapp/view/${id}`)
             setTask(response.data)
         } catch (error) {
                 console.log(error)
