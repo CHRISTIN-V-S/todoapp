@@ -43,7 +43,7 @@ export default function HomePage() {
     async function handleUpdateTodo(e, taskId) {
         e.preventDefault()
         try {
-            const res = await axios.put(`https://todoapp-v7pm.vercel.app//api/todoapp/update/${taskId}`,
+            const res = await axios.put(`https://todoapp-v7pm.vercel.app/api/todoapp/update/${taskId}`,
                 {
                     task: editTask,
                     complete
@@ -81,7 +81,7 @@ export default function HomePage() {
 
         try {
             const res = await axios.post(
-                "https://todoapp-v7pm.vercel.app//api/todoapp/add",
+                "https://todoapp-v7pm.vercel.app/api/todoapp/add",
                 {
                     task: newTask
                 },
