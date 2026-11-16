@@ -13,7 +13,7 @@ export default function ViewTask(){
 
     async function getTask(){
         try {
-            const response=await axios.get(`http://localhost:5585/api/todoapp/view/${id}`)
+            const response=await axios.get(`todoapp-kappa-henna.vercel.app/api/todoapp/view/${id}`)
             setTask(response.data)
         } catch (error) {
                 console.log(error)

@@ -21,7 +21,7 @@ export default function HomePage() {
 
     async function handleDeleteTodo(todoId) {
         try {
-            const res = await axios.delete(`http://localhost:5585/api/todoapp/delete/${todoId}`,
+            const res = await axios.delete(`todoapp-kappa-henna.vercel.app/api/todoapp/delete/${todoId}`,
                 {
                     headers: {
                         Authorization: `Bearer ${token}`
@@ -43,7 +43,7 @@ export default function HomePage() {
     async function handleUpdateTodo(e, taskId) {
         e.preventDefault()
         try {
-            const res = await axios.put(`http://localhost:5585/api/todoapp/update/${taskId}`,
+            const res = await axios.put(`todoapp-kappa-henna.vercel.app/api/todoapp/update/${taskId}`,
                 {
                     task: editTask,
                     complete
@@ -81,7 +81,7 @@ export default function HomePage() {
 
         try {
             const res = await axios.post(
-                "http://localhost:5585/api/todoapp/add",
+                "todoapp-kappa-henna.vercel.app/api/todoapp/add",
                 {
                     task: newTask
                 },

@@ -14,7 +14,7 @@ export default function RegisterPage() {
 
     try {
       const res = await axios.post(
-        "http://localhost:5585/api/user/register",
+        "todoapp-kappa-henna.vercel.app/api/user/register",
         { name, email, password }
       );
 

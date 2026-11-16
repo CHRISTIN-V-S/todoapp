@@ -12,7 +12,7 @@ export function useTasks(){
 
      async function getALLTask() {
         try {
-            const res = await axios.get("http://localhost:5585/api/todoapp", {
+            const res = await axios.get("todoapp-kappa-henna.vercel.app/api/todoapp", {
                 headers: {
                     Authorization: `Bearer ${token}`
                 }
