@@ -12,7 +12,7 @@ export function useTasks(){
 
      async function getALLTask() {
         try {
-            const res = await axios.get("https://todoapp-v7pm.vercel.app/api/todoapp", {
+            const res = await axios.get("https://todoapp-backend-tau-lemon.vercel.app/api/todoapp", {
                 headers: {
                     Authorization: `Bearer ${token}`
                 }
