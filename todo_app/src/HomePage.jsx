@@ -81,7 +81,7 @@ export default function HomePage() {
 
         try {
             const res = await axios.post(
-                "https://todoapp-backend-tau-lemon.vercel.app/api/add",
+                "https://todoapp-backend-tau-lemon.vercel.app/api/todoapp/add",
                 {
                     task: newTask
                 },
